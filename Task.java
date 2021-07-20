@@ -137,6 +137,9 @@ public class Task {
 
         driver.findElement(By.xpath("//label[.='Preferred email']")).sendKeys(fakeData.internet().emailAddress());
         driver.findElement(By.xpath("//button[@id='ico-send-offer-email']")).click();
+
+        // 18. End the session by closing down all the windows
+        driver.quit();
     }
 }
 
